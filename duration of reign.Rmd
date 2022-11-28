@@ -1,0 +1,31 @@
+---
+title: "Duration of Reign Among Danish Rulers"
+author: "Lena Moser"
+date: "2022-11-28"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, "duration", eval=TRUE}
+library(tidyverse)
+library(here)
+
+#load as tibble
+monarchs<-read_csv2("data/kongerække3.csv")
+
+# dataset changed to give Christoffer 2. two names to denote his two periods of reign
+
+# make pipeline to create visualisation
+monarchs %>% 
+  select(monarch,start_reign,end_reign) %>%
+  mutate(reign = end_reign-start_reign) %>%
+  mutate(monarch=reorder(monarch,reign)) %>% 
+  ggplot(aes(x = reign, y = monarch)) +
+  geom_col()+
+  labs(title = "Duration of Reign", x = "Reign in years", y = "Monarch")
+
+```
