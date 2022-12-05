@@ -1,0 +1,81 @@
+---
+title: "HW48"
+author: "Lena Moser"
+date: "2022-12-05"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Maping population in Angolan cities
+
+```{r }
+# Activate libraries
+library(leaflet)
+library(htmlwidgets)
+library(tidyverse)
+library(here)
+```
+
+Create basic map by assigning a base location in Luanda, Angola. Then select backgrounds from Esri mapping GIS software.
+
+```{r, echo=TRUE}
+l_ao <- leaflet() %>%   
+  setView(13.2310565, -8.9987275, zoom = 13)
+
+# select backgrounds from Esri
+esri <- grep("^Esri", providers, value = TRUE)
+
+for (provider in esri) {
+  l_ao <- l_ao %>% addProviderTiles(provider, group = provider)
+}
+
+# run object to see basic map
+l_ao
+```
+```{r, echo = TRUE}
+# make a layered map out of the components made above to create object
+AOmap <- l_ao %>%
+  addLayersControl(baseGroups = names(esri), 
+                   options = layersControlOptions(collapsed = TRUE)) %>% # add collapsible control
+  addMiniMap(tiles = esri[[1]], toggleDisplay = TRUE,
+             position = "bottomright") %>%   # adds minimap places at bottom right
+  addMeasure(
+    position = "bottomleft",
+    primaryLengthUnit = "meters",
+    primaryAreaUnit = "sqmeters",
+    activeColor = "#3D535D",
+    completedColor = "#7D4479") %>% 
+  htmlwidgets::onRender("
+                        function(el, x) {
+                        var myMap = this;
+                        myMap.on('baselayerchange',
+                        function (e) {
+                        myMap.minimap.changeLayer(L.tileLayer.provider(e.name));
+                        })
+                        }") %>% 
+  addControl("", position = "topright")  # add control top right corner
+
+# run object
+AOmap
+```
+Add data on Angolan cities to map from the source: https://simplemaps.com/data/ao-cities
+```{r, echo = TRUE}
+# read in data
+places <- read_csv("ao.csv")
+
+# inspect
+glimpse(places)
+
+# load coordinates of Angolan cities
+AOmap %>% 
+  addTiles() %>% 
+  addMarkers(lng = places$lng, 
+             lat = places$lat,
+             popup = places$city, # displays the name of the city when pop-up marker is clicked
+             label = places$population, # displays population when hover over pop-up marker
+             clusterOptions = markerClusterOptions()) # clusters results
+```
+Save map as html, available at: https://github.com/Digital-Methods-HASS/au449098_Moser_Lena/blob/main/HW48/aomap.html
