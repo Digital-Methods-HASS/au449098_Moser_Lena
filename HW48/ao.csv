@@ -1,0 +1,61 @@
+city,lat,lng,country,iso2,admin_name,capital,population,population_proper
+Luanda,-8.8383,13.2344,Angola,AO,Luanda,primary,8417000,2165867
+Huambo,-12.7667,15.7333,Angola,AO,Huambo,admin,1100000,872000
+Lubango,-14.9167,13.5000,Angola,AO,Huíla,admin,776249,776249
+Cabinda,-5.5667,12.2000,Angola,AO,Cabinda,admin,550000,550000
+Belas,-8.9983,13.2650,Angola,AO,Luanda,,500000,500000
+Lobito,-12.3597,13.5308,Angola,AO,Benguela,,393079,393079
+Saurimo,-9.6589,20.3934,Angola,AO,Lunda Sul,admin,393000,393000
+Cubal,-13.0333,14.2333,Angola,AO,Benguela,,357618,357618
+Uíge,-7.6167,15.0500,Angola,AO,Uíge,admin,322531,322531
+Menongue,-14.6585,17.6910,Angola,AO,Kuando Kubango,admin,320914,320914
+Vila Teixeira da Silva,-12.1958,15.8556,Angola,AO,Huambo,,294494,294494
+Sumbe,-11.2052,13.8417,Angola,AO,Kwanza Sul,admin,279968,279968
+Caála,-12.8500,15.5500,Angola,AO,Huambo,,279792,279792
+Matala,-14.7306,15.0367,Angola,AO,Huíla,,262763,262763
+Moçâmedes,-15.1953,12.1508,Angola,AO,Namibe,admin,255000,255000
+Ganda,-13.0167,14.6333,Angola,AO,Benguela,,235486,235486
+Catumbela,-12.4167,13.5333,Angola,AO,Benguela,,175805,175805
+Catape,-13.7667,15.0833,Angola,AO,Huíla,,167820,167820
+Ndalatando,-9.3000,14.9167,Angola,AO,Kwanza Norte,admin,161584,161584
+Lucapa,-8.4228,20.7393,Angola,AO,Lunda Norte,,154305,154305
+Benguela,-12.5500,13.4167,Angola,AO,Benguela,admin,151226,132808
+Negage,-7.7667,15.2667,Angola,AO,Uíge,,137559,137559
+Porto Amboim,-10.7183,13.7500,Angola,AO,Kwanza Sul,,137000,137000
+Chinguar,-12.5500,16.3333,Angola,AO,Bié,,129370,129370
+Catabola,-12.1167,17.3000,Angola,AO,Bié,,126631,126631
+Malanje,-9.5469,16.3387,Angola,AO,Malanje,admin,125856,87046
+Ondjiva,-17.0667,15.7333,Angola,AO,Cunene,admin,121537,121537
+Cassongue,-11.8181,14.9689,Angola,AO,Kwanza Sul,,117000,117000
+Cuito,-12.3833,16.9333,Angola,AO,Bié,admin,114000,114000
+Quilengues,-14.0814,14.0764,Angola,AO,Huíla,,113825,113825
+Luau,-10.7000,22.2333,Angola,AO,Moxico,,90000,90000
+Capenda Camulemba,-9.4233,18.4328,Angola,AO,Lunda Norte,,80000,79685
+Soio,-6.1333,12.3667,Angola,AO,Zaire,,67491,63167
+Mbanza Kongo,-6.2700,14.2400,Angola,AO,Zaire,admin,60182,24220
+Cuito Cuanavale,-15.1639,19.1731,Angola,AO,Kuando Kubango,,40829,40829
+Porto Alexandre,-15.8032,11.8459,Angola,AO,Namibe,,40000,40000
+Mavinga,-15.7895,20.3600,Angola,AO,Kuando Kubango,,30000,30000
+Caxito,-8.6467,13.6642,Angola,AO,Bengo,admin,28224,3107
+Caluquembe,-13.7833,14.6833,Angola,AO,Huíla,,25933,25933
+Longonjo,-12.9067,15.1864,Angola,AO,Huambo,,24350,24350
+Luena,-11.7900,19.9000,Angola,AO,Moxico,admin,21115,13438
+Camacupa,-12.0167,17.4833,Angola,AO,Bié,,19150,19150
+Ambriz,-7.8500,13.1167,Angola,AO,Bengo,,17000,17000
+Camabatela,-8.1833,15.3667,Angola,AO,Kwanza Norte,,12837,12625
+Uacu Cungo,-11.3583,15.1194,Angola,AO,Kwanza Sul,,12069,10970
+Dundo,-7.3800,20.8300,Angola,AO,Lunda Norte,admin,11985,11985
+Nzeto,-7.2290,12.8650,Angola,AO,Zaire,,11633,11633
+Songo,-7.3496,14.8500,Angola,AO,Uíge,,10579,10579
+Quibala,-10.7336,14.9800,Angola,AO,Kwanza Sul,,8915,1582
+Dondo,-9.6942,14.4228,Angola,AO,Kwanza Norte,,2353,2353
+Muconda,-10.5996,21.3200,Angola,AO,Lunda Sul,,2324,2324
+Chibemba,-15.7355,13.8905,Angola,AO,Huíla,,1502,1502
+Chibia,-15.1833,13.7000,Angola,AO,Huíla,,1411,1411
+Cangamba,-13.6996,19.8600,Angola,AO,Moxico,,1307,1307
+Cacolo,-10.1496,19.2600,Angola,AO,Lunda Sul,,984,984
+Calulo,-9.9996,14.9000,Angola,AO,Kwanza Sul,,795,795
+Calenga,-11.3196,16.2000,Angola,AO,Bié,,531,531
+Tchitado,-17.3196,13.9200,Angola,AO,Cunene,,500,437
+Xangongo,-16.7467,14.9747,Angola,AO,Cunene,,447,447
+Cazombo,-11.9058,22.9217,Angola,AO,Moxico,,298,298
